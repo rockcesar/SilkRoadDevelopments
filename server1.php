@@ -17,7 +17,7 @@
     
     $apps = array();
     $apps['auth_app1'] = 'Key ';
-    $apps['LazadaDemoTest'] = 'Key ';
+    $apps['silkroad'] = 'Key ';
     //$apps['LazadaDemoTest'] = 'Key <your Server API Key>';
    //$apps['auth_app4'] = 'Key <your Server API Key>';
     

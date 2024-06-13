@@ -124,6 +124,9 @@
         <div>Remember access through Pi Browser</div>
         <br/>
         <br/>
+        <button id="clear_cache" class="btn btn-info font-weight-bold text-black" style="border: 2px solid;"><div style=""><i class="fa fa-refresh"></i></div><div style="font-size:100%;">Clear Cache</div></button>
+        <br/>
+        <br/>
         <input id="pi_donate" name="pi_donate" class="form-text" type="number" min="0" step="0.01" lang="en-US" placeholder="Amount in Pi" />
         <input id="button_click" name="button_click" value="Donate Pi" type="button" class="btn btn-primary" />
 
@@ -166,6 +169,19 @@
                        //alert('Error: ' + err);
                   }
                 }
+            });
+
+            $( "#clear_cache" ).click(function() {
+                                    try {
+                                        Cache.delete();
+                                    } catch (err) {
+                                        console.error(err);
+                                    }
+                                    try {
+                                        window.location.reload(true);
+                                    } catch (err) {
+                                        console.error(err);
+                                    }
             });
 
             const Pi = window.Pi;

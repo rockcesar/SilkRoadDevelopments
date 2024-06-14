@@ -40,6 +40,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC1ELTSB5N"></script>
 <script>
@@ -225,6 +228,8 @@
                 else if(this.value == "history")
                     $('#tvonline').attr('src', "https://www.youtube.com/embed/videoseries?si=fgNdZx3Zl7HBuHcp&amp;list=PLob1mZcVWOaj-nXWX7GzNRm4I4uOcEb_8");
             });
+            
+            new Choices(document.querySelector("#tvselect"));
 
             $( "#clear_cache" ).click(function() {
                                     try {

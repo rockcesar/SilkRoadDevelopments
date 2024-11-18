@@ -423,16 +423,16 @@
                         var d1 = new Date();
                         
                         var days = [];
-                        days[0] = "/assets/img/days/sunday.jpg";
-                        days[1] = "/assets/img/days/monday.jpg";
-                        days[2] = "/assets/img/days/tuesday.jpg";
-                        days[3] = "/assets/img/days/wednesday.jpg";
-                        days[4] = "/assets/img/days/thursday.jpg";
-                        days[5] = "/assets/img/days/saturday.jpg";
-                        days[6] = "/assets/img/days/sunday.jpg";
+                        days[0] = "https://pisilkroad.com/assets/img/days/sunday.jpg";
+                        days[1] = "https://pisilkroad.com/assets/img/days/monday.jpg";
+                        days[2] = "https://pisilkroad.com/assets/img/days/tuesday.jpg";
+                        days[3] = "https://pisilkroad.com/assets/img/days/wednesday.jpg";
+                        days[4] = "https://pisilkroad.com/assets/img/days/thursday.jpg";
+                        days[5] = "https://pisilkroad.com/assets/img/days/saturday.jpg";
+                        days[6] = "https://pisilkroad.com/assets/img/days/sunday.jpg";
                         
                         $('#overlay')
-                            .css({backgroundImage: `url(${days[d1.getUTCDay()]})`})
+                            .css({backgroundImage: days[d1.getUTCDay()]})
                             .addClass('open')
                             .one('click', function() { $(this).removeClass('open'); });
                         

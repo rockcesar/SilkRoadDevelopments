@@ -416,6 +416,7 @@
                     
                     const showAdResponse = await Pi.Ads.showAd("rewarded");
                     
+                    alert(showAdResponse.result);
                     if (showAdResponse.result === "AD_REWARDED")
                     {
                         if(showAdResponse.adId)

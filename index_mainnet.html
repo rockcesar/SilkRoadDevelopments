@@ -414,8 +414,12 @@
                         }
                     }
                     
+                    alert("1234");
+                    
                     const showAdResponse = await Pi.Ads.showAd("rewarded");
                     
+                    alert("123");
+                    alert(showAdResponse);
                     alert(showAdResponse.result);
                     if (showAdResponse.result === "AD_REWARDED")
                     {
